@@ -1,6 +1,6 @@
 FROM archlinux:latest
 
-RUN pacman -Syu --noconfirm base-devel namcap
+RUN pacman -Syu --noconfirm base-devel namcap git
 
 RUN useradd -m builder
 
