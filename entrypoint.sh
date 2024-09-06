@@ -1,9 +1,7 @@
 #!/bin/bash
 
-git clone $2 build
-
 if [[ ! -z "$1" ]]; then
-    cd "build/$1"
+    cd "$1"
 fi
 
 echo "Running makepkg from $PWD"
