@@ -19,7 +19,7 @@ echo "Running makepkg"
 
 # TODO: support extra flags
 
-su --login builder --command='makepkg -fs ./PKGBUILD'
+su - builder -c='cd $(pwd); makepkg -fs ./PKGBUILD'
 
 echo "Running namcap"
 
