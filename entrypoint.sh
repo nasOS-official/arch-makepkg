@@ -21,4 +21,4 @@ su - builder -c "cd $(pwd); gpg --recv-keys $2; makepkg -fs ./PKGBUILD"
 
 echo "Running namcap"
 
-namcap -i *.pkg.tar.xz
+namcap -i *.pkg.tar.zst
