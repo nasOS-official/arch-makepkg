@@ -9,8 +9,6 @@ inputs:
     default: ""
 runs:
   using: docker
-  volumes:
-    - /:/sources/
   image: Dockerfile
   args:
     - "/sources/${{ inputs.path }}"
