@@ -5,6 +5,7 @@ if [[ ! -z "$1" ]]; then
 fi
 
 echo "Running makepkg from $PWD"
+ls -la
 
 pkg_deps=$(source ./PKGBUILD && echo ${makedepends[@]} ${depends[@]})
 echo "Installing dependencies: $pkg_deps"
