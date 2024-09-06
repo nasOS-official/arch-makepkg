@@ -7,8 +7,13 @@ inputs:
     description: "Path to directory containing PKGBUILD file"
     required: true
     default: ""
+  repo:
+    description: "URI of git repo"
+    required: true
+
 runs:
   using: docker
   image: Dockerfile
   args:
     - "${{ inputs.path }}"
+    - "${{ inputs.repo }}"
